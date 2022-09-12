@@ -16,16 +16,16 @@ products.each do |product|
   
 end
 
-rest_client = RestClient.get('https://evening-stream-14289.herokuapp.com/sales')
-orders = JSON.parse(rest_client)
-orders.each do |order|
-   new_order = Order.create(
-    quantity: order['quantity'],
-    supplier_id: 1
-    # product_id: 1
-    )
+# rest_client = RestClient.get('https://evening-stream-14289.herokuapp.com/sales')
+# orders = JSON.parse(rest_client)
+# orders.each do |order|
+#    new_order = Order.create(
+#     quantity: order['quantity'],
+#     supplier_id: 1
+#     # product_id: 1
+#     )
     
-end
+# end
 
 
 

@@ -22,12 +22,12 @@ class ApplicationController < Sinatra::Base
     product.to_json
   end
 
-  # patch '/products/:id' do
-  #   product = Product.find(params[:id])
-  #   product.update(
-  #     unit_price: params[:unit_price])
-  #     product.to_json
-  # end
+  patch '/products/:id' do
+    product = Product.find(params[:id])
+    product.update(
+      unit_price: params[:unit_price])
+      product.to_json
+  end
 
   # delete '/products/:id' do
   #   product = Product.find(params[:id])

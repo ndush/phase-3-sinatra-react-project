@@ -7,33 +7,33 @@ class ApplicationController < Sinatra::Base
     products.to_json
   end
 
-  get '/products/:id' do
-    product = Product.find(params[:id])
-    product.to_json
-  end
+  # get '/products/:id' do
+  #   product = Product.find(params[:id])
+  #   product.to_json
+  # end
 
-  post '/products' do
-    product = Product.create(
-      product_name: params[:product_name],
-      unit_price: params[:unit_price],
-      description: params[:description],
-      image_url: params[:image_url],
-    )
-    product.to_json
-  end
+  # post '/products' do
+  #   product = Product.create(
+  #     product_name: params[:product_name],
+  #     unit_price: params[:unit_price],
+  #     description: params[:description],
+  #     image_url: params[:image_url],
+  #   )
+  #   product.to_json
+  # end
 
-  patch '/products/:id' do
-    product = Product.find(params[:id])
-    product.update(
-      unit_price: params[:unit_price])
-      product.to_json
-  end
+  # patch '/products/:id' do
+  #   product = Product.find(params[:id])
+  #   product.update(
+  #     unit_price: params[:unit_price])
+  #     product.to_json
+  # end
 
-  delete '/products/:id' do
-    product = Product.find(params[:id])
-    product.destroy
-    product.to_json
-  end
+  # delete '/products/:id' do
+  #   product = Product.find(params[:id])
+  #   product.destroy
+  #   product.to_json
+  # end
 
   # get "/orders" do
   #      order =Order.all

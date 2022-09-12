@@ -25,8 +25,8 @@ ActiveRecord::Schema.define(version: 2022_09_10_171726) do
     t.string "image_url"
   end
 
-  create_table "suppliers", force: :cascade do |t|
-    t.string "supplier_name"
-  end
+#   create_table "suppliers", force: :cascade do |t|
+#     t.string "supplier_name"
+#   end
 
-end
+# end

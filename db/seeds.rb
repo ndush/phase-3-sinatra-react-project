@@ -1,10 +1,10 @@
 puts "🌱 Seeding spices..."
 
 # Seed your database here
-# Supplier.create(supplier_name: 'Mary')
+Supplier.create(supplier_name: 'Mary')
 
-rest_client = RestClient.get("https://evening-stream-14289.herokuapp.com/sales")
-products = JSON.parse(rest_client)
+# rest_client = RestClient.get("https://evening-stream-14289.herokuapp.com/sales")
+# products = JSON.parse(rest_client)
 products.each do |product|
    new_product = Product.create(
         product_name: product['product_name'],
